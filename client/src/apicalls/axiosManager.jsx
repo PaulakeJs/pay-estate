@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:7000', // Adjust the target to your Express server
+        target: 'http://localhost:7000',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
       },

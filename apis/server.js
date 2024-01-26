@@ -22,7 +22,7 @@ const currentDir = __dirname;
 app.use(express.static(path.join(currentDir, "client/dist")));
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(currentDir, "../client", "dist", "index.html"));
+  res.sendFile(path.join(currentDir, "../client/dist", "index.html"));
 });
 
 const PORT = 7000;
