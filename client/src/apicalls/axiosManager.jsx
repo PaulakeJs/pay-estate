@@ -1,6 +1,7 @@
 import axios from "axios";
+
 export const axiosManager = axios.create({
-  baseURL: "http://localhost:7000",
+  baseURL: '/api', // Set the base URL to the proxied API path
 });
 
 axiosManager.interceptors.request.use((config) => {
